@@ -78,6 +78,16 @@ p {
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  .header-title {
+    font-size: 300px;
+  }
+
+  .header-text {
+    font-size: 100px;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .header-title {
     font-size: 200px;
