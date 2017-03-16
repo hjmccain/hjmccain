@@ -92,31 +92,26 @@ p {
 
 
 @media only screen and (min-width: 1600px) {
+  .header-div {
+    left: 300px;
+    top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .header-shape-with-text {
     height: 80vh;
     max-width: 100%;
     margin-top: 30px;
   }
-
-  // .header-title {
-  //   font-size: 200px;
-  //   width: 3000px;
-  // }
-  //
-  // .header-text {
-  //   font-size: 80px;
-  // }
 }
 
 @media only screen and (min-width: 2000px) {
-  // .header-shape-with-text {
-  //   width: 100%;
-  //   margin-top: 20px;
-  // }
-
   .header-div {
-    top: 200px;
-    left: 200px;
+    left: 600px;
+    top: 150px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header-title {
