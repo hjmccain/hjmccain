@@ -25,12 +25,26 @@ p {
   display: none;
 }
 
+.header-div {
+  position: absolute;
+  top: 60px;
+  left: 32px;
+}
+
 .header-container {
   text-align: center;
 }
 
+.header-title {
+  font-family: $title;
+  font-weight: 800;
+  font-size: 200px;
+}
+
 .header-text {
-  display: none;
+  font-family: $text;
+  font-size: 50px;
+  max-width: 950px;
 }
 
 .more-button {
@@ -41,6 +55,25 @@ p {
   width: 180px;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header-shape-with-text {
+    max-width: 90%;
+  }
+
+  .header-div {
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+  }
+
+  .header-text {
+    font-size: 75px;
   }
 }
 
@@ -56,8 +89,26 @@ p {
   }
 }
 
+@media only screen and (max-width: 840px) {
+  .header-title {
+    font-family: $title;
+    font-weight: 800;
+    font-size: 100px;
+  }
+
+  .header-text {
+    font-family: $text;
+    font-size: 25px;
+    max-width: 500px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .header-shape-with-text {
+    display: none;
+  }
+
+  .header-title, .header-text {
     display: none;
   }
 
