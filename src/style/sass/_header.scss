@@ -16,9 +16,10 @@ p {
 }
 
 .header-shape-with-text {
-  height: 70vh;
+  max-height: 70vh;
+  width: 90%;
   max-width: 1400px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .header-shape {
@@ -58,24 +59,10 @@ p {
   }
 }
 
-@media only screen and (min-width: 2000px) {
-  .header-title {
-    font-size: 300px;
-  }
-
-  .header-text {
-    font-size: 100px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .header-title {
-    font-size: 200px;
-  }
-
-  .header-text {
-    font-size: 80px;
-    max-width: 1100px;
+@media only screen and (min-width: 1200px) {
+  .header-div {
+    top: 100px;
+    left: 75px;
   }
 }
 
@@ -90,17 +77,54 @@ p {
     top: 100px;
     margin-left: auto;
     margin-right: auto;
+    width: 1100px;
+  }
+
+  .header-title {
+    font-size: 200px;
+    width: 3000px;
   }
 
   .header-text {
-    font-size: 75px;
+    font-size: 80px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1600px) {
+  .header-shape-with-text {
+    height: 80vh;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  // .header-title {
+  //   font-size: 200px;
+  //   width: 3000px;
+  // }
+  //
+  // .header-text {
+  //   font-size: 80px;
+  // }
+}
+
+@media only screen and (min-width: 2000px) {
+  // .header-shape-with-text {
+  //   width: 100%;
+  //   margin-top: 20px;
+  // }
+
   .header-div {
-    top: 100px;
-    left: 60px;
+    top: 200px;
+    left: 200px;
+  }
+
+  .header-title {
+    font-size: 300px;
+  }
+
+  .header-text {
+    font-size: 100px;
   }
 }
 
@@ -111,6 +135,13 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
+  .header-shape-with-text {
+    max-height: 70vh;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 30px;
+  }
+
   .more-button {
     display: none;
   }
