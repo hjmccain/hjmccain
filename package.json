@@ -2,7 +2,7 @@
   "name": "hannah-dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hjmccain.github.io/hannah-portfolio",
+  "homepage": "https://hjmccain.github.io/hjmccain",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
