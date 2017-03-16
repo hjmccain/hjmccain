@@ -77,6 +77,13 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header-div {
+    top: 100px;
+    left: 60px;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .header-container {
     height: 100vh;
@@ -98,7 +105,7 @@ p {
 
   .header-text {
     font-family: $text;
-    font-size: 25px;
+    font-size: 45px;
     max-width: 500px;
   }
 }
