@@ -26,16 +26,25 @@ $shape-color: #01B8E5;
 }
 
 .view-code, .view-app {
-  height: 50px;
+  height: 80px;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: -145px;
+  position: relative;
   &:hover {
     opacity: 0.8;
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.dark {
+  filter: brightness(50%);
+}
+
 .view-app {
-  margin-left: 6px;
+  margin-left: 60px;
 }
 
 .center-image {
@@ -62,6 +71,11 @@ $shape-color: #01B8E5;
 .highlighted-title {
   background: $background;
   font-size: 1.5em;
+}
+
+.portfolio-elements {
+  margin-top: -580px;
+  position: relative;
 }
 
 .portfolio-element {
