@@ -32,8 +32,7 @@ $shape-color: #01B8E5;
 .bio-background {
   max-width: 788px;
   margin: 0 auto;
-  padding-top: 25%;
-  padding-bottom: 30%;
+  padding-top: 20%;
 }
 
 .about-container {
@@ -41,6 +40,7 @@ $shape-color: #01B8E5;
   font-family: $text;
   font-size: 1.5em;
   line-height: 1.2;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1000px) {
