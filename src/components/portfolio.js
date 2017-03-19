@@ -6,10 +6,10 @@ import projectsShape from '../../public/projects-cut-off.png';
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      <div className="portfolio-title-div" id="portfolio">
+      <div id="portfolio">
         <img className="projects-shape" src={projectsShape} alt="blue shape" />
       </div>
-      <div className="portfolio-item-container">
+      <div className="portfolio-items">
         <PortfolioItem
           titleContent={PortfolioText.three.header}
           description={PortfolioText.three.description}
@@ -38,7 +38,6 @@ const Portfolio = () => {
           demoLink={PortfolioText.two.demo}
           codeLink={PortfolioText.two.code} />
       </div>
-      <div className="space-div"></div>
     </div>
   )
 }

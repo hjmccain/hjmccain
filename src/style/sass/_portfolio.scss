@@ -15,53 +15,80 @@ $shape-color: #01B8E5;
   font-family: $text;
   font-size: 1em;
   line-height: 1.2;
-}
-
-.projects-shape {
-  width: 100%;
-  max-width: 1450px;
-  padding-top: 80px;
-  position: relative;
-  top: 35px;
-}
-
-.view-code, .view-app {
-  height: 80px;
-  display: inline-block;
-  margin-bottom: -145px;
-  position: relative;
-  &:hover {
-    opacity: 0.8;
+  .projects-shape {
+    width: 100%;
+    max-width: 1450px;
+    padding-top: 80px;
+    position: relative;
+    top: 35px;
   }
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.dark {
-  filter: brightness(50%);
-}
-
-.view-app {
-  margin-left: 60px;
-}
-
-.center-image {
-  text-align: center;
-}
-
-.mockup {
-  width: 100%;
-  max-width: 1000px;
-}
-
-.last-element {
-  margin-bottom: 50%;
+  .portfolio-items {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    background: $alt-background;
+  }
 }
 
 .portfolio-item {
   text-align: center;
+}
+
+.title-img {
+  display: block;
+  margin: 10% auto 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding-top: 20px;
+}
+
+.edster-title {
+  margin: 17% auto 0 auto;
+}
+
+.item-info {
+  text-align: center;
+  .app-buttons {
+    text-align: center;
+  }
+  .view-code, .view-app {
+    height: 80px;
+    display: inline-block;
+    margin-bottom: -145px;
+    position: relative;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .view-app {
+    margin-left: 60px;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .mockup {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .dark {
+    filter: brightness(50%);
+  }
+}
+
+.app-info-container {
+  margin-top: -580px;
+  position: relative;
+  p {
+    padding: 10px;
+    max-width: 500px;
+    margin: 2% auto 2% auto;
+    background: #F8F7EF;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.last-element {
+  margin-bottom: 50%;
 }
 
 .highlighted-font {
@@ -73,32 +100,38 @@ $shape-color: #01B8E5;
   font-size: 1.5em;
 }
 
-.portfolio-elements {
-  margin-top: -580px;
-  position: relative;
+@media only screen and (max-width: 600px) {
+  .app-info-container {
+    margin-top: 0px;
+    position: static;
+  }
+
+  .hidden {
+    visibility: visible !important;
+  }
+
+  .item-info {
+    .view-code, .view-app {
+      margin-left: 60px;
+      height: 40px;
+      margin-bottom: 0px;
+      position: static;
+      margin: 20px 0px 20px 0px;
+    }
+    .view-app {
+      margin-left: 20px;
+    }
+  }
 }
 
-.portfolio-element {
-  padding: 10px;
-  max-width: 500px;
-  margin: 2% auto 2% auto;
-  background: #F8F7EF;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-}
+@media only screen and (max-width: 850px) {
+  .title-img {
+    margin: 20% auto 0 auto;
+  }
 
-.portfolio-item-container {
-  margin: 0 auto;
-  padding-bottom: 20px;
-  text-align: center;
-  background: $alt-background;
-}
-
-.title-img {
-  display: block;
-  margin: 2% auto;
-  width: 100%;
-  max-width: 600px;
-  padding-top: 20px;
+  .edster-title {
+    margin: 27% auto 0 auto;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -112,19 +145,5 @@ $shape-color: #01B8E5;
   .title-img {
     width: 90%;
     max-width: 600px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .portfolio-item {
-    text-align: center;
-  }
-
-  .view-code {
-    margin-left: 0%;
-  }
-
-  .view-app, .view-code {
-    margin-bottom: 10px;
   }
 }
