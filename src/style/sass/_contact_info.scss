@@ -12,22 +12,27 @@ $section-color: #3A75C4;
 $shape-color: #01B8E5;
 
 .banana {
-  position: relative;
-  top: -139px;
-  left: 670px;
-  margin-top: -400px;
+  display: none;
 }
 
 .keep-in-touch {
   width: 90%;
   max-width: 750px;
   margin-left: 30px;
-  margin-top: 15%;
+  margin-top: 30%;
 }
 
 .contact-container {
   font-family: $text;
   font-size: 1.8em;
+  p {
+    background: $background;
+    color: $black;
+    padding: 4px;
+  }
+  .contact-link {
+    color: $black;
+  }
 }
 
 .contact {
@@ -37,7 +42,7 @@ $shape-color: #01B8E5;
 .contact-info-container {
   margin: -70px 0px 200px 0px;
   background: $section-color;
-  padding: 10px 0px 30px 150px;
+  padding: 8% 0px 15% 150px;
 }
 
 .contact-link {
@@ -45,16 +50,9 @@ $shape-color: #01B8E5;
   text-decoration: underline;
   &:hover {
     text-decoration: none;
-    color: $background;
+    color: $section-color;
   }
 }
-
-@media only screen and (max-width: 1100px) {
-  .banana {
-    display: none;
-  }
-}
-
 
 @media only screen and (max-width: 600px) {
   .contact-container {
@@ -62,6 +60,6 @@ $shape-color: #01B8E5;
   }
 
   .contact-info-container {
-    padding: 30px 0px 30px 50px;
+    padding: 100px 0px 100px 50px;
   }
 }
