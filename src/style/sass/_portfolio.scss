@@ -70,8 +70,8 @@ $shape-color: #01B8E5;
   .mockup {
     transition: 0.5s ease;
     width: auto;
+    width: 80%;
     max-width: 1200px;
-    max-height: 90vh;
   }
   .dark {
     transition: 0.5s ease;
@@ -104,7 +104,48 @@ $shape-color: #01B8E5;
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1250px) {
+  .item-info {
+    .view-code, .view-app {
+      height: 60px;
+      margin-bottom: -86px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .item-info {
+    .view-code, .view-app {
+      height: 40px;
+      margin-bottom: -67px;
+    }
+  }
+
+  .app-info-container {
+    margin-top: -550px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .portfolio-element {
+    padding: 10px;
+    margin: 5% auto;
+    background: #F8F7EF;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .title-img {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .item-info {
+    .view-code, .view-app {
+      height: 60px;
+      margin-bottom: -100px;
+    }
+  }
+
   .app-info-container {
     margin-top: 0px;
     position: static;
@@ -112,19 +153,6 @@ $shape-color: #01B8E5;
 
   .hidden {
     visibility: visible !important;
-  }
-
-  .item-info {
-    .view-code, .view-app {
-      margin-left: 60px;
-      height: 40px;
-      margin-bottom: 0px;
-      position: static;
-      margin: 20px 0px 20px 0px;
-    }
-    .view-app {
-      margin-left: 20px;
-    }
   }
 }
 
@@ -136,18 +164,27 @@ $shape-color: #01B8E5;
   .edster-title {
     margin: 27% auto 0 auto;
   }
+
+  .item-info {
+    .view-code, .view-app {
+      height: 40px;
+      margin-bottom: -100px;
+    }
+    .view-app {
+      margin-left: 15px;
+    }
+  }
 }
 
-@media only screen and (max-width: 1000px) {
-  .portfolio-element {
-    padding: 10px;
-    margin: 5% auto;
-    background: #F8F7EF;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+@media only screen and (max-width: 500px) {
+  .item-info {
+    .view-code, .view-app {
+      position: static;
+      margin: 20px 0px 0px 0px;
+    }
   }
 
-  .title-img {
-    width: 90%;
-    max-width: 600px;
+  .mockup {
+    display: none;
   }
 }
