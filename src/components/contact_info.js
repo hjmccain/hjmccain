@@ -11,18 +11,23 @@ const ContactInfo = () => {
         <br />
         <br />
         <p className="contact">
-          email <a href="mailto:hannahjmccain@gmail.com" className="contact-link">
+          E-mail <a href="mailto:hannahjmccain@gmail.com" className="contact-link">
             hannahjmccain@gmail.com
           </a>
         </p>
         <p className="contact">
-          github <a href="https://github.com/hjmccain" className="contact-link" target="_blank">
+          Github <a href="https://github.com/hjmccain" className="contact-link" target="_blank">
             hjmccain
           </a>
         </p>
         <p className="contact">
-          twitter <a href="https://twitter.com/hjmccain" className="contact-link" target="_blank">
+          Twitter <a href="https://twitter.com/hjmccain" className="contact-link" target="_blank">
             @hjmccain
+          </a>
+        </p>
+        <p className="contact">
+          LinkedIn <a href="https://www.linkedin.com/in/hjmccain/" className="contact-link" target="_blank">
+            Hannah McCain
           </a>
         </p>
       </div>
