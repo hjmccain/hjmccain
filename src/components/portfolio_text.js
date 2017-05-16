@@ -60,7 +60,7 @@ export default {
       db: ['MongoDB']
     },
     demo: {
-      url: 'https://edster.herokuapp.com/#/welcome',
+      url: 'https://edster.herokuapp.com/#/',
       text: 'edster demo'
     },
     code: {

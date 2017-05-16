@@ -4,13 +4,13 @@ import banana from '../../public/naner.png';
 
 const ContactInfo = () => {
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container">
       <img className="keep-in-touch" src={keepInTouch} alt="Thanks for stopping by. Keep in touch!" />
       <div className="contact-info-container">
         <br />
         <br />
         <br />
-        <p className="contact">
+        <p className="contact" id="contact">
           E-mail <a href="mailto:hannahjmccain@gmail.com" className="contact-link">
             hannahjmccain@gmail.com
           </a>

@@ -13,7 +13,7 @@ const Header = () => {
             Hi there!
           </p>
           <p className="header-text">
-            I’m Hannah, a full-stack web developer based in New York City.</p>
+            I’m Hannah, a web developer on the East Coast.</p>
         </div>
       </h1>
     </div>
